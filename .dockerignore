@@ -1,0 +1,10 @@
+.git
+.gitignore
+*.md
+*Dockerfile*
+.dockerignore
+*_test.go
+testdata
+vendor
+.idea
+.vscode
