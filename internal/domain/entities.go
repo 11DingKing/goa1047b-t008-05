@@ -228,7 +228,7 @@ func (c *Container) RecordTemperature(t time.Time, temp float64) error {
 // IsTemperatureCompliant reports whether the latest reading is within bounds.
 func (c *Container) IsTemperatureCompliant() bool {
 	if len(c.Readings) == 0 {
-		return true
+		return false
 	}
 	last := c.Readings[len(c.Readings)-1]
 	return last.Temperature >= MinTempC && last.Temperature <= MaxTempC
